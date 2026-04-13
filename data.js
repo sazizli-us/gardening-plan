@@ -1,0 +1,637 @@
+export const gardenData = {
+  title: "Backyard Garden Helper",
+  startDate: "2026-04-12",
+  location: "Fulshear, Texas 77441",
+  plants: [
+    {
+      nickname: "Jala Left",
+      plant: "Jalapeno plant",
+      location: "Left side of the jalapeno-cilantro half of the wooden barrel",
+      shortCare: "Likes warm sun and steady moisture, but let the top inch dry before you water again.",
+      notes: [
+        "Peppers want at least 6 hours of direct sun for the best harvest.",
+        "Do not let it stay wilted into the morning.",
+        "Wait to fertilize until peppers begin sizing up, and then feed lightly.",
+      ],
+    },
+    {
+      nickname: "Jala Right",
+      plant: "Jalapeno plant",
+      location: "Right side of the jalapeno-cilantro half of the wooden barrel",
+      shortCare: "Treat it like Jala Left, but compare the two so you learn which side dries faster.",
+      notes: [
+        "If one jalapeno droops first, that side of the barrel is your dry side.",
+        "Keep mulch a little away from the stem.",
+        "Healthy green leaves matter more than pushing fast growth right now.",
+      ],
+    },
+    {
+      nickname: "Salsa Shade",
+      plant: "Cilantro plant",
+      location: "Same half-barrel as the two jalapenos",
+      shortCare: "Keep it a little cooler and a little more evenly moist than the jalapenos.",
+      notes: [
+        "Texas A&M says cilantro is a cool-season crop and starts flowering once temperatures rise above about 85 F.",
+        "Pick outer stems a little at a time instead of scalping the plant.",
+        "If a tall flower stalk appears, use what you can and expect slower leaf production.",
+      ],
+    },
+    {
+      nickname: "Barrel Tom",
+      plant: "Tomato plant",
+      location: "Tomato at the far end of the wooden barrel",
+      shortCare: "Deep water, keep it inside the cage, and do not hard-prune a caged tomato.",
+      notes: [
+        "Tomatoes want at least 6 hours of direct sun each day.",
+        "Do not let the barrel go bone dry or fruit quality drops fast.",
+        "Because it is caged, support is more important than sucker pruning.",
+      ],
+    },
+    {
+      nickname: "Crunch Stick",
+      plant: "Celery plant",
+      location: "Same barrel end as Barrel Tom and Parsley Pal",
+      shortCare: "This is the thirstiest plant you have, so keep its root zone evenly moist.",
+      notes: [
+        "Celery has a shallow root system and gets stringy and bitter when it dries out.",
+        "Do not bury the center crown under extra soil or mulch.",
+        "If the newest inner leaves start blackening, moisture stress may be part of the problem.",
+      ],
+    },
+    {
+      nickname: "Parsley Pal",
+      plant: "Parsley plant",
+      location: "Same barrel end as Barrel Tom and Crunch Stick",
+      shortCare: "Likes even moisture and gentler harvests than the tomatoes or peppers.",
+      notes: [
+        "Parsley can handle partial shade better than tomatoes and peppers.",
+        "Cut outer stems first, not the center.",
+        "Do not harvest more than about one-third of the plant at once.",
+      ],
+    },
+    {
+      nickname: "Fence Tom Left",
+      plant: "Tomato plant",
+      location: "Left in-ground tomato by the fence, as you face the fence from the house",
+      shortCare: "Water slowly at the base and less often than the barrel plants, but go deeper when you do.",
+      notes: [
+        "In-ground tomatoes usually need fewer waterings than containers.",
+        "Keep the plant tucked inside the cage and remove only leaves that touch the soil.",
+        "Do not strip a bunch of leaves off a caged tomato in Texas heat.",
+      ],
+    },
+    {
+      nickname: "Fence Tom Right",
+      plant: "Tomato plant",
+      location: "Right in-ground tomato by the fence, as you face the fence from the house",
+      shortCare: "Treat it like Fence Tom Left, but compare the two spots so you notice drainage or sun differences.",
+      notes: [
+        "If one fence tomato dries out faster, that spot is your warmer or sandier spot.",
+        "Loose soft ties are better than tight ties.",
+        "Check under the leaves once or twice a week for pests.",
+      ],
+    },
+  ],
+  routines: [
+    {
+      title: "Weekday before work, 6:15-6:30 a.m.",
+      body: "This is your main gardening window Monday through Friday.",
+      points: [
+        "Touch the barrel soil first. Containers usually need attention before the in-ground tomatoes.",
+        "If the barrel is dry 1 inch down, water the dry zone slowly at the soil line.",
+        "Only water the fence tomatoes if the soil is dry 2 to 3 inches down near the root zone.",
+      ],
+    },
+    {
+      title: "Weekday after work, 5:15-5:25 p.m.",
+      body: "Use evenings for checking, not for automatic full watering.",
+      points: [
+        "Tuck loose tomato stems back into the cages and remove only broken or soil-touching leaves.",
+        "Look for pests, spots, or storm damage while the light is still good.",
+        "Only evening-water if a plant is still wilted after sunset and the soil is truly dry.",
+      ],
+    },
+    {
+      title: "Weekend morning, 7:00-7:45 a.m.",
+      body: "This is the best time for slower jobs.",
+      points: [
+        "Give dry areas a deeper soak than you can manage on a work morning.",
+        "Top up mulch if you have it and keep it from touching stems.",
+        "Do small harvests of cilantro or parsley and recheck tomato cage ties.",
+      ],
+    },
+    {
+      title: "When to worry and when not to",
+      body: "You do not need to panic over every droopy leaf.",
+      points: [
+        "Morning wilt is the real warning sign. Afternoon droop that recovers by evening is common in heat.",
+        "Standing water in the barrel is a drainage problem that needs fixing fast.",
+        "Dark green, lush plants usually mean skip fertilizer and stay patient.",
+      ],
+    },
+  ],
+  forecast: [
+    {
+      date: "Sunday, April 12",
+      weather: "40% evening storm chance, low near 65 F, humid, and breezy",
+      action:
+        "Because you transplanted today, do not automatically water again tonight. If the root balls are still moist, let the forecast rain help and focus on making sure cages are steady and the barrel drains.",
+    },
+    {
+      date: "Monday, April 13",
+      weather: "83/68 F, slight afternoon storm chance, humid, south wind around 13 mph",
+      action:
+        "Do a quick 6:15 a.m. finger test. The barrel may need a light touch-up if the top inch is dry, but the fence tomatoes may still be fine from planting day and any overnight moisture.",
+    },
+    {
+      date: "Tuesday, April 14",
+      weather: "83/68 F, warm, mostly dry, and breezy",
+      action:
+        "Warm wind means the barrel can dry faster than it looks. Check the celery-parsley-tomato side carefully before work and water only the zones that are actually dry.",
+    },
+    {
+      date: "Wednesday, April 15",
+      weather: "83/69 F, brighter and still warm",
+      action:
+        "This is a good day to watch for real transplant shock. Morning wilt, crispy edges, or a suddenly light-feeling barrel means water is more important than anything else.",
+    },
+    {
+      date: "Thursday, April 16",
+      weather: "86/68 F, mostly sunny, feels hotter by midday",
+      action:
+        "This is your first real heat test. Expect cilantro and celery to complain first, and be ready to water the barrel in the morning if the soil is even close to dry.",
+    },
+    {
+      date: "Friday, April 17",
+      weather: "86/69 F, warm, mostly sunny, and breezier",
+      action:
+        "Stay consistent instead of reactive. Early watering beats rescue watering, especially for the barrel plants, and this is a smart day to lightly harvest cilantro before it bolts harder.",
+    },
+    {
+      date: "Saturday, April 18",
+      weather: "84/63 F, partly sunny with a 30% rain chance later",
+      action:
+        "Weekend morning is your best deep-soak window. Water early if the barrel is dry, skip if everything is still damp, and do any mulch or cage-touchup before the evening rain chance.",
+    },
+  ],
+  rules: [
+    {
+      title: "Barrel first, fence second",
+      body: "Your wooden barrel will usually need attention before the in-ground tomatoes because container soil heats and dries faster.",
+    },
+    {
+      title: "Finger test beats guessing",
+      body: "For the barrel, check 1 inch down. For the fence tomatoes, check 2 to 3 inches down. If it is still damp, wait.",
+    },
+    {
+      title: "Morning is the default watering time",
+      body: "Water before work whenever possible. Evening is for checking, unless the soil is genuinely dry and a plant is still limp after sunset.",
+    },
+    {
+      title: "Rain changes the plan",
+      body: "A real soaking rain means skip the next watering and recheck the next morning. A light sprinkle often does not help a barrel much.",
+    },
+    {
+      title: "Keep leaves dry when you water",
+      body: "Aim water at the soil, not the leaves. This reduces disease pressure on tomatoes, herbs, and celery.",
+    },
+    {
+      title: "Do not over-prune caged tomatoes",
+      body: "Texas A&M notes that caging reduces work and helps protect fruit from sunburn. Remove only broken leaves or leaves touching soil.",
+    },
+    {
+      title: "Mulch buys you time",
+      body: "A 2- to 3-inch mulch layer helps hold moisture and cool the root zone. Keep mulch a little away from stems and crowns.",
+    },
+    {
+      title: "Pause fertilizer for now",
+      body: "Your Home Depot soil already has fertilizer in it. For the first few weeks, water and observation are safer than adding more food.",
+    },
+    {
+      title: "Feed only if fruit is setting and plants are not too lush",
+      body: "Tomatoes and peppers can be lightly side-dressed after first fruit set, but skip feeding if leaves are still dark green and vigorous.",
+    },
+    {
+      title: "Heat hits cilantro and celery first",
+      body: "Cilantro is cool-season and may bolt once highs push past about 85 F. Celery needs steady moisture or it turns stringy and bitter.",
+    },
+    {
+      title: "Drainage matters as much as watering",
+      body: "If water sits in the barrel instead of draining, roots can suffocate. Fix drainage fast if that ever happens.",
+    },
+    {
+      title: "Sun expectations are different by plant",
+      body: "Tomatoes and jalapenos want the most direct sun. Parsley can handle partial shade better, and cilantro appreciates relief from hard afternoon heat.",
+    },
+  ],
+  days: [
+    {
+      day: 1,
+      title: "Storm-night settle-in",
+      summary: "Sunday evening: because you planted today and Fulshear has a storm chance tonight, check moisture before doing any extra watering.",
+      tips: [
+        "Jala Left and Jala Right: If the soil 1 inch down is still cool and damp from transplanting, skip extra water tonight.",
+        "Salsa Shade: If this spot already feels dry, give it a small drink so cilantro does not dry out right after planting.",
+        "Barrel Tom: Make sure the cage is centered and the stem is tucked inside it.",
+        "Crunch Stick and Parsley Pal: Check that water can drain out of the barrel and that the celery crown is not buried.",
+        "Fence Tom Left and Fence Tom Right: Firm the soil at the base and make sure both cages will not wobble in gusts.",
+      ],
+      note: "Today is about settled roots and good drainage, not fertilizer or pruning.",
+    },
+    {
+      day: 2,
+      title: "Post-rain finger test",
+      summary: "Monday before work: check soil first instead of blanket-watering everything.",
+      tips: [
+        "Jala Left and Jala Right: Skip watering if the jalapeno side is still damp 1 inch down.",
+        "Salsa Shade: Give a small drink only if the cilantro zone feels dry before 7 a.m.",
+        "Barrel Tom: Check the barrel tomato zone carefully because warm wind dries containers faster than the yard soil.",
+        "Crunch Stick and Parsley Pal: If this end feels dry at the surface and just below it, water this zone first.",
+        "Fence Tom Left and Fence Tom Right: Leave them alone unless the soil is dry 2 to 3 inches down.",
+      ],
+      note: "Wet soil should feel cool and a little clingy, not dusty.",
+    },
+    {
+      day: 3,
+      title: "Breezy barrel check",
+      summary: "Tuesday before work: warm wind means check the barrel more carefully than the in-ground tomatoes.",
+      tips: [
+        "Jala Left and Jala Right: Water only if the top inch is dry; jalapenos do not want soggy roots.",
+        "Salsa Shade: Keep this spot a little more evenly moist than the jalapenos.",
+        "Barrel Tom: If the barrel tomato side feels light or dry, give it a slower soak this morning.",
+        "Crunch Stick and Parsley Pal: This is the first zone likely to need water when the barrel starts drying out.",
+        "Fence Tom Left and Fence Tom Right: Check the soil at the base, not just the dry-looking crust on top.",
+      ],
+      note: "Afternoon droop can be normal. Morning droop is the real warning sign.",
+    },
+    {
+      day: 4,
+      title: "Support and tidy",
+      summary: "Wednesday after work: do a quick structure check instead of turning this into a big gardening project.",
+      tips: [
+        "Jala Left and Jala Right: Leave them alone unless a leaf is obviously broken.",
+        "Salsa Shade: Do not do a big cilantro haircut yet.",
+        "Barrel Tom: Check that the cage is steady and gently tuck the stem back inside if needed.",
+        "Crunch Stick and Parsley Pal: Remove dead bits so water reaches the soil cleanly.",
+        "Fence Tom Left and Fence Tom Right: Re-seat loose stems inside the cages and remove only leaves touching soil.",
+      ],
+      note: "No hard pruning. Caged tomatoes do not need it.",
+    },
+    {
+      day: 5,
+      title: "First hot-day response",
+      summary: "Thursday before work: highs near 86 F mean the barrel may need water even if it was okay yesterday.",
+      tips: [
+        "Jala Left and Jala Right: Water if the top inch is dry, but do not keep the pepper side muddy.",
+        "Salsa Shade: Give cilantro first priority on the jalapeno side if that half is dry.",
+        "Barrel Tom: If the barrel tomato side is close to dry, deep-water this morning instead of waiting for rescue wilt later.",
+        "Crunch Stick and Parsley Pal: Check this zone carefully; celery and parsley should not bake dry on a hot day.",
+        "Fence Tom Left and Fence Tom Right: Deep-water only if the root zone is dry 2 to 3 inches down.",
+      ],
+      note: "If you have mulch, this is a good evening to add it.",
+    },
+    {
+      day: 6,
+      title: "Heat-watch Friday",
+      summary: "Friday before work: stay consistent instead of reactive on another warm day.",
+      tips: [
+        "Jala Left and Jala Right: If the pepper side is still damp, skip it and move on.",
+        "Salsa Shade: Harvest a few usable outer stems if the plant is leafy enough; heat will not make cilantro last forever.",
+        "Barrel Tom: Check lower leaves and the cage, but do not start pruning suckers just because you see them.",
+        "Crunch Stick and Parsley Pal: If either one looks limp in the morning, water this zone first.",
+        "Fence Tom Left and Fence Tom Right: Take a quick look under the leaves for pests before you head to work.",
+      ],
+      note: "A tiny daily check beats a giant weekend rescue.",
+    },
+    {
+      day: 7,
+      title: "Weekend slow soak",
+      summary: "Saturday morning: use your longer weekend window for the first true reset.",
+      tips: [
+        "Jala Left and Jala Right: If the pepper side is dry, water it slowly and evenly, not in one fast splash.",
+        "Salsa Shade: Keep cilantro damp but never muddy, especially with the evening shower chance.",
+        "Barrel Tom: Deep-soak this zone if it is dry and make sure water reaches the root ball, not just the mulch.",
+        "Crunch Stick and Parsley Pal: This is the day to water them well if the barrel end feels light.",
+        "Fence Tom Left and Fence Tom Right: Water deeply in the morning only if the soil is dry, then let the evening forecast do the rest if rain shows up.",
+      ],
+      note: "If you have mulch, add a 2- to 3-inch layer today and keep it away from stems.",
+    },
+    {
+      day: 8,
+      title: "Start the new week steady",
+      summary: "Go back to the soil test and keep the watering simple.",
+      tips: [
+        "Jala Left and Jala Right: Check before watering and avoid overdoing it.",
+        "Salsa Shade: Give a little extra if it is drying fast.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Deep water if the barrel is light again.",
+        "Fence Tom Left and Fence Tom Right: Water only if the soil is drying several inches down.",
+      ],
+      note: "Consistency matters more than soaking everything every day.",
+    },
+    {
+      day: 9,
+      title: "Gentle cleanup",
+      summary: "Remove only yellow, broken, or soil-touching leaves and keep moving slowly.",
+      tips: [
+        "Jala Left and Jala Right: Skip pruning unless something is clearly damaged.",
+        "Salsa Shade: Harvest a little if the plant is getting crowded.",
+        "Barrel Tom, Fence Tom Left, and Fence Tom Right: Take off leaves that are touching the soil.",
+        "Crunch Stick and Parsley Pal: Trim lightly only if needed.",
+      ],
+      note: "If you are not sure whether to cut it, leave it for now.",
+    },
+    {
+      day: 10,
+      title: "Fence tomato check",
+      summary: "Focus on the two tomatoes in the ground and give them a deep soak if the weather is dry.",
+      tips: [
+        "Jala Left, Jala Right, and Salsa Shade: Water only if the barrel is dry.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Check the barrel too, because it may still dry first.",
+        "Fence Tom Left and Fence Tom Right: Deep water at the base and keep the cage ties loose but secure.",
+      ],
+      note: "In-ground tomatoes usually need less frequent watering than barrel plants.",
+    },
+    {
+      day: 11,
+      title: "Heat-watch day",
+      summary: "Keep an eye out for afternoon wilt and water in the morning if the forecast looks hot.",
+      tips: [
+        "Jala Left and Jala Right: Jalapenos can handle warmth, but not bone-dry soil.",
+        "Salsa Shade: This is the first plant likely to complain in heat.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Check for quick drying in the barrel.",
+        "Fence Tom Left and Fence Tom Right: Leave enough water to keep the roots steady through the day.",
+      ],
+      note: "Morning watering is best on hot days because it gives the roots time to drink before the sun peaks.",
+    },
+    {
+      day: 12,
+      title: "Simple water day",
+      summary: "Keep it boring and consistent: water only the plants that are drying out.",
+      tips: [
+        "Jala Left and Jala Right: A light watering may be enough.",
+        "Salsa Shade: Keep moisture more even than with the jalapenos.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Check each one before you water the whole barrel.",
+        "Fence Tom Left and Fence Tom Right: Water only if the soil feels dry below the surface.",
+      ],
+      note: "Boring gardening is good gardening.",
+    },
+    {
+      day: 13,
+      title: "Support sweep",
+      summary: "Check every tomato cage, then adjust ties before they get loose.",
+      tips: [
+        "Jala Left and Jala Right: Leave them alone unless a branch is in the way.",
+        "Salsa Shade: No big changes today.",
+        "Barrel Tom, Fence Tom Left, and Fence Tom Right: Tighten any soft ties that are slipping.",
+        "Crunch Stick and Parsley Pal: Keep the barrel soil tidy so water reaches the roots.",
+      ],
+      note: "Ties should hold the plant, not squeeze it.",
+    },
+    {
+      day: 14,
+      title: "Weekend reset",
+      summary: "Do one slower walk-around and water deeply only where the soil needs it.",
+      tips: [
+        "Jala Left and Jala Right: Check for dry pockets near the edges of the barrel.",
+        "Salsa Shade: This plant may need the most frequent touch-up water.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Soak the barrel if it feels warm and light.",
+        "Fence Tom Left and Fence Tom Right: Deep water, then let the roots search for moisture.",
+      ],
+      note: "A long, slow soak is better than quick splashes.",
+    },
+    {
+      day: 15,
+      title: "Mid-month check",
+      summary: "Look for new growth and make sure nothing is leaning or drying too fast.",
+      tips: [
+        "Jala Left and Jala Right: Look for new leaves and steady color.",
+        "Salsa Shade: Harvest a few leaves if it is crowded.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Check the base soil and water if the barrel has gone dry.",
+        "Fence Tom Left and Fence Tom Right: Make sure the cages still stand upright in the wind.",
+      ],
+      note: "If the plants look healthy, do not rush to feed them yet.",
+    },
+    {
+      day: 16,
+      title: "Moisture and mulch",
+      summary: "Top up mulch if you have it and use it to help the soil stay damp longer.",
+      tips: [
+        "Jala Left and Jala Right: Keep mulch a little away from the stems.",
+        "Salsa Shade: Mulch helps this plant stay cooler.",
+        "Barrel Tom, Fence Tom Left, and Fence Tom Right: Mulch can help tomatoes hold moisture through hot afternoons.",
+        "Crunch Stick and Parsley Pal: These plants appreciate steadier moisture too.",
+      ],
+      note: "Mulch is not fertilizer. It is just a lid for the soil.",
+    },
+    {
+      day: 17,
+      title: "Quick look day",
+      summary: "Do a short inspection and water only if the plants are asking for it.",
+      tips: [
+        "Jala Left and Jala Right: Water if the leaves are starting to relax in the morning.",
+        "Salsa Shade: Give moisture before it gets crunchy.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Check the barrel first because it dries the fastest.",
+        "Fence Tom Left and Fence Tom Right: Water if the soil feels dry several inches down.",
+      ],
+      note: "Morning is the best time to spot real problems instead of normal afternoon droop.",
+    },
+    {
+      day: 18,
+      title: "Light trim only",
+      summary: "Trim a little cilantro or parsley if needed and leave the rest of the plants alone.",
+      tips: [
+        "Jala Left and Jala Right: Do not take much off the jalapenos.",
+        "Salsa Shade: Pick a few leaves, not the whole plant.",
+        "Barrel Tom, Fence Tom Left, and Fence Tom Right: Remove only leaves that are dirty or touching the ground.",
+        "Crunch Stick and Parsley Pal: Keep cuts small and gentle.",
+      ],
+      note: "If you have to wonder whether it is too much, it probably is too much.",
+    },
+    {
+      day: 19,
+      title: "Deep-root reminder",
+      summary: "Water deeply enough that the roots have to reach down a little.",
+      tips: [
+        "Jala Left and Jala Right: A good soak is better than many tiny splashes.",
+        "Salsa Shade: Stay consistent so it does not bolt early.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: This side may need the strongest watering today.",
+        "Fence Tom Left and Fence Tom Right: Deep water and then leave the cages alone.",
+      ],
+      note: "Deep watering helps the plants survive Texas heat later in the month.",
+    },
+    {
+      day: 20,
+      title: "Pest patrol",
+      summary: "Look for holes, sticky spots, or tiny bugs, then water only what needs it.",
+      tips: [
+        "Jala Left and Jala Right: Check the underside of the leaves.",
+        "Salsa Shade: Keep an eye out for aphids.",
+        "Barrel Tom, Fence Tom Left, and Fence Tom Right: Look for chewing and yellow spots.",
+        "Crunch Stick and Parsley Pal: Make sure the stems still look firm.",
+      ],
+      note: "A quick daily check is enough. You do not need to inspect every leaf forever.",
+    },
+    {
+      day: 21,
+      title: "Week three check-in",
+      summary: "If growth looks steady, keep your routine. If anything looks pale, wait before feeding.",
+      tips: [
+        "Jala Left and Jala Right: Water only if the barrel is drying out fast.",
+        "Salsa Shade: Harvest a little if it is still healthy and leafy.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Do not add fertilizer yet unless the plants look clearly hungry.",
+        "Fence Tom Left and Fence Tom Right: Keep watering deep but not constant.",
+      ],
+      note: "At this stage, patience is usually better than adding more fertilizer.",
+    },
+    {
+      day: 22,
+      title: "Conditional feed day",
+      summary: "Sunday morning: only think about fertilizer today if fruit is setting and the plants are not already lush dark green.",
+      tips: [
+        "Jala Left and Jala Right: If peppers are forming and the plants look average green, you may side-dress about 1 tablespoon of balanced vegetable fertilizer around each plant, away from the stem, then water it in. If they are still dark green and happy, skip it.",
+        "Salsa Shade: Do not fertilize cilantro this month unless it is clearly pale and struggling.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: If the first tomato fruits are marble-size or larger and the plant is not overly lush, you may side-dress about 1 tablespoon around the outer edge of the root zone and water it in. Skip celery and parsley unless they look clearly pale.",
+        "Fence Tom Left and Fence Tom Right: Same rule as Barrel Tom. Feed lightly only if fruits are setting and the plant is not already dark green and vigorous.",
+      ],
+      note: "If you are unsure, the safer beginner move is to skip feeding and keep watering well.",
+    },
+    {
+      day: 23,
+      title: "Tie-up day",
+      summary: "Check the tomato cages and tie any loose stems before the plants get top-heavy.",
+      tips: [
+        "Jala Left and Jala Right: Nothing fancy today unless a branch is broken.",
+        "Salsa Shade: Harvest a little if it is getting crowded.",
+        "Barrel Tom, Fence Tom Left, and Fence Tom Right: Re-tie stems gently to the cages.",
+        "Crunch Stick and Parsley Pal: Keep them evenly moist while the tomatoes stretch upward.",
+      ],
+      note: "A soft tie is enough. The plant should be able to move a little in the wind.",
+    },
+    {
+      day: 24,
+      title: "Warm-day prep",
+      summary: "If the week is heating up, water earlier and more deeply than usual.",
+      tips: [
+        "Jala Left and Jala Right: Morning watering only if the soil is dry.",
+        "Salsa Shade: Give extra attention because heat stresses cilantro first.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: The barrel may need the largest drink today.",
+        "Fence Tom Left and Fence Tom Right: Deep soak at the base so the roots are ready for hot afternoons.",
+      ],
+      note: "When the forecast looks hot, water early enough that the plant can use it before noon.",
+    },
+    {
+      day: 25,
+      title: "Quiet care day",
+      summary: "Do the smallest useful job and do not fuss over the plants too much.",
+      tips: [
+        "Jala Left and Jala Right: Check moisture and leave them be if the soil is still damp.",
+        "Salsa Shade: Pick only what you will use.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Light watering may be enough today.",
+        "Fence Tom Left and Fence Tom Right: Only water if the ground is truly dry.",
+      ],
+      note: "Sometimes the best move is a quick check and nothing else.",
+    },
+    {
+      day: 26,
+      title: "Herb harvest day",
+      summary: "Trim a little parsley and cilantro for the kitchen while keeping the plants healthy.",
+      tips: [
+        "Jala Left and Jala Right: Leave the jalapenos alone except for watering.",
+        "Salsa Shade: Harvest a few stems from the outside.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Give parsley a light trim and water the celery well if the barrel is drying out.",
+        "Fence Tom Left and Fence Tom Right: Deep water if the soil has gone dry below the surface.",
+      ],
+      note: "Small harvests help herbs keep growing without getting too leggy.",
+    },
+    {
+      day: 27,
+      title: "Container soak",
+      summary: "Give the barrel a careful, slower soak because container soil dries and heats up faster.",
+      tips: [
+        "Jala Left and Jala Right: Water the whole left side of the barrel evenly.",
+        "Salsa Shade: Keep the moisture steady but not muddy.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Soak this end of the barrel until water starts to drain through.",
+        "Fence Tom Left and Fence Tom Right: Water only as much as the soil needs.",
+      ],
+      note: "Containers often need more attention than in-ground plants in Texas heat.",
+    },
+    {
+      day: 28,
+      title: "Do not overfeed",
+      summary: "Check plant color and growth, but still hold fertilizer unless a plant is clearly struggling.",
+      tips: [
+        "Jala Left and Jala Right: Healthy green leaves mean the plant is doing fine.",
+        "Salsa Shade: If it is getting tall, keep harvesting lightly.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Water instead of feeding unless the plants look pale and weak.",
+        "Fence Tom Left and Fence Tom Right: Keep support and moisture steady.",
+      ],
+      note: "The safest beginner move is usually water, observe, and wait.",
+    },
+    {
+      day: 29,
+      title: "Last-week prep",
+      summary: "Tidy the cages, check the soil one more time, and note which plants are easiest to forget.",
+      tips: [
+        "Jala Left and Jala Right: Write down how often this side of the barrel needed water.",
+        "Salsa Shade: If it is still growing, keep picking lightly.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Recheck the barrel because it may need the most help.",
+        "Fence Tom Left and Fence Tom Right: Make sure the cage ties are still holding.",
+      ],
+      note: "A tiny notebook note can make next month much easier.",
+    },
+    {
+      day: 30,
+      title: "Review and repeat",
+      summary: "Use what you learned this month to set the new routine for watering and checking the plants.",
+      tips: [
+        "Jala Left and Jala Right: Keep the jalapenos a little on the drier side compared with the herbs.",
+        "Salsa Shade: Expect this one to need the most attention or to finish soon in the heat.",
+        "Barrel Tom, Crunch Stick, and Parsley Pal: Keep the barrel on a steady watering rhythm.",
+        "Fence Tom Left and Fence Tom Right: Deep water on a regular schedule and keep them caged.",
+      ],
+      note: "By the end of the month, you will know which plants need daily attention and which ones can wait a day.",
+    },
+  ],
+  sources: [
+    {
+      label: "Texas A&M AgriLife: Vegetable Gardening in Containers",
+      url: "https://aggie-horticulture.tamu.edu/wp-content/uploads/sites/10/2013/09/EHT-062.pdf",
+      note: "Used for container sizes, drainage, watering frequency, mulch, and daily container-care rules.",
+    },
+    {
+      label: "Texas A&M AgriLife: Tomatoes",
+      url: "https://aggie-horticulture.tamu.edu/wp-content/uploads/sites/10/2013/09/EHT-043.pdf",
+      note: "Used for tomato sun needs, deep watering, mulch, caging, and conservative fertilizing after fruit set.",
+    },
+    {
+      label: "Texas A&M AgriLife: Peppers",
+      url: "https://aggie-horticulture.tamu.edu/wp-content/uploads/sites/10/2013/09/EHT-038.pdf",
+      note: "Used for jalapeno sun, watering, transplant care, and fertilizer timing after first fruit begins enlarging.",
+    },
+    {
+      label: "Texas A&M AgriLife: Cilantro",
+      url: "https://aggie-horticulture.tamu.edu/wp-content/uploads/sites/10/2013/09/EHT-032S-cilantro.pdf",
+      note: "Used for cilantro's cool-season behavior, bolting above about 85 F, and light-harvest guidance.",
+    },
+    {
+      label: "Texas A&M AgriLife: Growing Herbs",
+      url: "https://aggie-horticulture.tamu.edu/wp-content/uploads/sites/10/2013/09/EHT-079.pdf",
+      note: "Used for parsley harvest guidance and Texas herb light expectations.",
+    },
+    {
+      label: "Utah State University Extension: Celery in the Garden",
+      url: "https://extension.usu.edu/yardandgarden/research/celery-in-the-garden.pdf",
+      note: "Used for celery's shallow-rooted moisture needs and why water stress makes it stringy and bitter.",
+    },
+    {
+      label: "WeatherBug 10-Day Forecast for Fulshear, TX",
+      url: "https://www.weatherbug.com/weather-forecast/10-day-weather/fulshear-tx-77441",
+      note: "Used on April 12, 2026 for the next 7 days of highs, lows, rain chances, and wind to tune week-one watering advice.",
+    },
+    {
+      label: "National Weather Service point forecast for Fulshear",
+      url: "https://forecast.weather.gov/MapClick.php?lat=29.6911&lon=-95.8842",
+      note: "Used for local storm context and first-week risk awareness.",
+    },
+  ],
+};

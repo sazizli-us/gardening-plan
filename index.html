@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backyard Garden Helper</title>
+    <meta
+      name="description"
+      content="A simple 30-day gardening guide for the backyard barrel plants and the fence tomatoes in Fulshear, Texas."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Family garden cheat sheet</p>
+          <h1>Backyard Garden Helper</h1>
+          <p class="lede">
+            A beginner-friendly 30-day plan for the barrel plants and the two tomatoes by the fence.
+            Open this each morning to see what needs attention today.
+          </p>
+          <div class="hero-metrics" id="heroMetrics" aria-live="polite"></div>
+        </div>
+        <aside class="today-card" id="todayCard" aria-live="polite"></aside>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-head">
+            <h2>Plant Nicknames</h2>
+            <p>Short names make it easier for the whole family to remember what is where.</p>
+          </div>
+          <div class="plant-grid" id="plantGrid"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>Your Routine</h2>
+            <p>This is the easiest rhythm to follow with a 7 a.m. to 5 p.m. workday.</p>
+          </div>
+          <div class="routine-grid" id="routineGrid"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>Weather This Week</h2>
+            <p>Forecast-aware adjustments for Fulshear from Sunday, April 12 through Saturday, April 18.</p>
+          </div>
+          <div class="forecast-grid" id="forecastGrid"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>Recurring Care Rules</h2>
+            <p>These are the simple rules that repeat all month long.</p>
+          </div>
+          <div class="rules-grid" id="rulesGrid"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>30-Day Plan</h2>
+            <p>Each day has one plain-English summary and a short list of plant-specific jobs.</p>
+          </div>
+          <div class="plan-grid" id="planGrid"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>Sources</h2>
+            <p>The plan below was adapted from extension guidance plus the current local forecast.</p>
+          </div>
+          <div class="sources-card" id="sourcesCard"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
